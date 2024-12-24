@@ -4,7 +4,7 @@ metadata:
   namespace: robot-shop
   name: robot-shop
 spec:
-  ingressClassName: gce  # Use the ingress class 'gce' instead of 'alb'
+  ingressClassName: gce
   rules:
     - http:
         paths:
@@ -12,6 +12,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: web  # Correct service name (web)
+                name: web
                 port:
-                  number: 8080  # Correct port number (8080)
+                  number: 8080
